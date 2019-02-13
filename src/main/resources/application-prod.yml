@@ -1,0 +1,21 @@
+eureka:
+  instance:
+    leaseRenewalIntervalInSeconds: 10
+  client:
+    registryFetchIntervalSeconds: 5
+    serviceUrl:
+      defaultZone: http://35.201.196.124:1111/eureka/
+
+#management:
+#  endpoint:
+#    health:
+#      show-details: ALWAYS
+#  endpoints:
+#    web:
+#      exposure:
+#        include: "*"
+#
+#security2:
+#    user:
+#      name: "sa"
+#      password: "sa"
