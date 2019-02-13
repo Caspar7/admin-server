@@ -2,7 +2,7 @@
 
 BUILD_NUMBER=$1
 env=$2
-serviceName="admin-service"
+serviceName="admin-server"
 running=`docker ps | grep ${serviceName} | awk '{print $1}'`
 if [ ! -z "$running" ]; then
     docker stop $running

@@ -2,6 +2,6 @@ server:
   port: 8000
 spring:
   application:
-    name: admin-service
+    name: admin-server
   profiles:
     active: ${uat}
