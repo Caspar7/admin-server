@@ -1,6 +1,9 @@
 #!/usr/bin/env bash
 serviceName="admin-server"
 BUILD_NUMBER=$1
+deployIp=$2
+env=$3
+
 echo "stop and delete exist docker images and container..."
 running=`docker ps | grep ${serviceName} | awk '{print $1}'`
 if [ ! -z "$running" ]; then
